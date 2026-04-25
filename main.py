@@ -1,5 +1,5 @@
-from scraper.fetch_page import fetch_page
-from scraper.parse_data import parse_table
+from scraper import fetch_page
+from scraper import parse_table
 
 URL = "https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue"
 
