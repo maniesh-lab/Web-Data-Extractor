@@ -6,6 +6,10 @@ URL = "https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_Sta
 def main():
     print("Fetching page...")
     html = fetch_page(URL)
+
+    if html is None:
+        print("Stopping- could not fetch the page.")
+        exit()
     
 
     print("Parsing data...")
