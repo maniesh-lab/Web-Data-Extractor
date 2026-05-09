@@ -17,8 +17,10 @@ def main():
 
     # df.rename(columns={"Revenue (USD millions)": "Revenue (USD millions)"},inplace=True) #inplace modifies directly, no new copy
 
-    df["Revenue (USD millions)"] = df["Revenue (USD millions)"].str.replace(",","",regex=False)
-    df["Revenue (USD millions)"] = df["Revenue (USD millions)"].astype(float)
+    df["Revenue (USD millions)"] = df["Revenue (USD millions)"].str.replace(",","",regex=False)  
+    # regex=False = treat "," as plain text, not a search pattern
+
+    df["Revenue (USD millions)"] = df["Revenue (USD millions)"].astype(float) # converting to float dt
 
 
     df["Employees"] = df["Employees"].str.replace(",","",regex=False)
@@ -27,11 +29,11 @@ def main():
 
     print(df)
 
-    top_10 = df.head(10)
+    top_10 = df.head(10)  #top10
 
     
     print("Saving CSVs'...")
-    df.to_csv("data/Top_USA_Companies.csv", index=False)
+    df.to_csv("data/Top_USA_Companies.csv", index=False)  # doesn't save extra index we already have rank there
     top_10.to_csv("data/Top_10_Companies.csv",index=False)
     print("Success.")
 
