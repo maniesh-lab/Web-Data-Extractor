@@ -54,17 +54,6 @@ data/Top_USA_Companies.csv
 
 ---
 
-## 🎯 Purpose
-
-This project demonstrates:
-
-* Web scraping
-* Data extraction
-* Data cleaning
-* Automation using Python
-
----
-
 ## ⚠️ Note
 
-This project is for educational purposes. Always check a website’s scraping policies before extracting data.
+Always verify a website's robots.txt and terms of service before scraping in production.
