@@ -2,10 +2,11 @@
 
 ## 📌 Project Overview
 
-This project scrapes data from Wikipedia to extract a list of the largest companies in the United States by revenue.
+A Python automation tool that scrapes real-world company data from Wikipedia 
+and delivers a clean, structured CSV ready for analysis or reporting.
 
-It collects structured data and exports it into a CSV file for analysis.
-
+Extracts company name, rank, revenue, and industry — automatically cleaned 
+and formatted using pandas. No manual copy-paste. Just run and get data.
 ---
 
 ## ⚙️ Features
