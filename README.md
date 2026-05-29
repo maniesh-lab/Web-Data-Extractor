@@ -52,6 +52,14 @@ The extracted data will be saved in:
 data/Top_USA_Companies.csv
 ```
 
+Example ouputs:
+
+1.
+![CSV Preview](screenshots/csv_preview.png)
+
+2.
+![Terminal output](screenshots/terminal_output.png)
+
 ---
 
 ## ⚠️ Note
