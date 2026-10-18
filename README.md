@@ -15,6 +15,8 @@ and formatted using pandas. No manual copy-paste. Just run and get data.
 * Extracts table data (company, revenue, rank, etc.)
 * Cleans and structures the data using pandas
 * Exports data to CSV format
+* Clear error messages if the page can't be fetched or the table layout changes
+* Strips Wikipedia footnote markers (like `[a]`) before converting numbers
 
 ---
 
@@ -52,7 +54,7 @@ The extracted data will be saved in:
 data/Top_USA_Companies.csv
 ```
 
-Example ouputs:
+Example outputs:
 
 1.
 ![CSV Preview](screenshots/csv_preview.png)
