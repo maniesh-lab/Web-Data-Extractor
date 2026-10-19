@@ -29,6 +29,32 @@ and formatted using pandas. No manual copy-paste. Just run and get data.
 
 ---
 
+## 📁 Project Structure
+
+```
+Web-Data-Extractor/
+│
+├── scraper/
+│   ├── fetch_page.py          # downloads the Wikipedia page (requests)
+│   └── parse_data.py          # finds the table, strips footnotes, builds the DataFrame
+│
+├── data/
+│   ├── Top_USA_Companies.csv  # full cleaned table (100 companies)
+│   └── Top_10_Companies.csv   # first 10 rows
+│
+├── screenshots/
+│   ├── csv_preview.png
+│   └── terminal_output.png
+│
+├── main.py                    # entry point: fetch, parse, clean numbers, save CSVs
+├── .gitignore
+├── LICENSE
+├── requirements.txt
+└── README.md
+```
+
+---
+
 ## 🚀 How to Run
 
 1. Clone the repository
