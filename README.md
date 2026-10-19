@@ -95,3 +95,9 @@ Example outputs:
 ## Note
 
 Always verify a website's robots.txt and terms of service before scraping in production.
+
+---
+
+## Author
+
+**Manish Pandeya** · [github.com/maniesh-lab](https://github.com/maniesh-lab)
