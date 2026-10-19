@@ -7,6 +7,7 @@ and delivers a clean, structured CSV ready for analysis or reporting.
 
 Extracts company name, rank, revenue, and industry — automatically cleaned 
 and formatted using pandas. No manual copy-paste. Just run and get data.
+
 ---
 
 ## ⚙️ Features
@@ -74,10 +75,11 @@ python main.py
 
 ## 📂 Output
 
-The extracted data will be saved in:
+The extracted data is saved in two files:
 
 ```
-data/Top_USA_Companies.csv
+data/Top_USA_Companies.csv   # full cleaned table
+data/Top_10_Companies.csv    # first 10 rows
 ```
 
 Example outputs:
