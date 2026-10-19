@@ -26,6 +26,7 @@ and formatted using pandas. No manual copy-paste. Just run and get data.
 * Python
 * requests
 * BeautifulSoup (bs4)
+* lxml
 * pandas
 
 ---
