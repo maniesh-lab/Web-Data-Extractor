@@ -1,6 +1,6 @@
 # Web Data Extractor – Top USA Companies
 
-## 📌 Project Overview
+## Project Overview
 
 A Python automation tool that scrapes real-world company data from Wikipedia 
 and delivers a clean, structured CSV ready for analysis or reporting.
@@ -10,7 +10,7 @@ and formatted using pandas. No manual copy-paste. Just run and get data.
 
 ---
 
-## ⚙️ Features
+## Features
 
 * Scrapes real-world data from a website
 * Extracts table data (company, revenue, rank, etc.)
@@ -21,7 +21,7 @@ and formatted using pandas. No manual copy-paste. Just run and get data.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * Python
 * requests
@@ -30,7 +30,7 @@ and formatted using pandas. No manual copy-paste. Just run and get data.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Web-Data-Extractor/
@@ -56,7 +56,7 @@ Web-Data-Extractor/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository
 2. Install dependencies:
@@ -73,7 +73,7 @@ python main.py
 
 ---
 
-## 📂 Output
+## Output
 
 The extracted data is saved in two files:
 
@@ -92,6 +92,6 @@ Example outputs:
 
 ---
 
-## ⚠️ Note
+## Note
 
 Always verify a website's robots.txt and terms of service before scraping in production.
