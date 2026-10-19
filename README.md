@@ -5,8 +5,9 @@
 A Python automation tool that scrapes real-world company data from Wikipedia 
 and delivers a clean, structured CSV ready for analysis or reporting.
 
-Extracts company name, rank, revenue, and industry — automatically cleaned 
-and formatted using pandas. No manual copy-paste. Just run and get data.
+Saves all 7 columns of the table — rank, name, industry, revenue (USD millions), 
+revenue growth, employees and headquarters — automatically cleaned and 
+formatted using pandas. No manual copy-paste. Just run and get data.
 
 ---
 
