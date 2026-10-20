@@ -21,18 +21,6 @@ millions), revenue growth, employees and headquarters.
 
 ---
 
-## Tech Stack
-
-| Tool | Purpose |
-|---|---|
-| Python | Language |
-| `requests` | Downloads the page |
-| `beautifulsoup4` | Finds the table and reads its cells |
-| `lxml` | The HTML parser BeautifulSoup uses |
-| `pandas` | Cleans the numbers and saves the CSVs |
-
----
-
 ## Project Structure
 
 ```
@@ -95,17 +83,29 @@ Example outputs:
 
 ---
 
-## Known Limitations
+## Tech Stack
 
-- It reads only the first table on the page with the `wikitable` class. If Wikipedia moves another table above it, the script stops with an error instead of saving the wrong data
-- Rows that don't have one cell per column (for example, merged cells) are skipped without a message
-- Revenue growth is kept as text (like `5.1%`), not turned into a number
+| Tool | Purpose |
+|---|---|
+| Python | Language |
+| `requests` | Downloads the page |
+| `beautifulsoup4` | Finds the table and reads its cells |
+| `lxml` | The HTML parser BeautifulSoup uses |
+| `pandas` | Cleans the numbers and saves the CSVs |
 
 ---
 
 ## Note
 
 Always verify a website's robots.txt and terms of service before scraping in production.
+
+---
+
+## Known Limitations
+
+- It reads only the first table on the page with the `wikitable` class. If Wikipedia moves another table above it, the script stops with an error instead of saving the wrong data
+- Rows that don't have one cell per column (for example, merged cells) are skipped without a message
+- Revenue growth is kept as text (like `5.1%`), not turned into a number
 
 ---
 
