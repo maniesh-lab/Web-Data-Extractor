@@ -1,34 +1,35 @@
 # Web Data Extractor – Top USA Companies
 
-## Project Overview
+A Python script that scrapes Wikipedia's table of the largest US companies by
+revenue and saves it as a clean CSV: footnote marks removed and revenue and
+employee counts turned into real numbers, ready for analysis. It also saves a
+top-10 file.
 
-A Python automation tool that scrapes real-world company data from Wikipedia 
-and delivers a clean, structured CSV ready for analysis or reporting.
-
-Saves all 7 columns of the table — rank, name, industry, revenue (USD millions), 
-revenue growth, employees and headquarters — automatically cleaned and 
-formatted using pandas. No manual copy-paste. Just run and get data.
+It keeps all 7 columns of the table: rank, name, industry, revenue (USD
+millions), revenue growth, employees and headquarters.
 
 ---
 
 ## Features
 
-* Scrapes real-world data from a website
-* Extracts table data (company, revenue, rank, etc.)
-* Cleans and structures the data using pandas
-* Exports data to CSV format
-* Clear error messages if the page can't be fetched or the table layout changes
-* Strips Wikipedia footnote markers (like `[a]`) before converting numbers
+* Downloads the Wikipedia page with `requests` and finds the companies table with BeautifulSoup
+* Strips Wikipedia footnote markers (like `[a]` or `[1]`) from every cell
+* Turns revenue and employee counts into real numbers, and says how many revenue values couldn't be read
+* Saves the full table and a top-10 table as CSV
+* Prints the total, highest and average revenue at the end
+* Clear error messages, and a non-zero exit code, if the page can't be fetched or the table layout changes
 
 ---
 
 ## Tech Stack
 
-* Python
-* requests
-* BeautifulSoup (bs4)
-* lxml
-* pandas
+| Tool | Purpose |
+|---|---|
+| Python | Language |
+| `requests` | Downloads the page |
+| `beautifulsoup4` | Finds the table and reads its cells |
+| `lxml` | The HTML parser BeautifulSoup uses |
+| `pandas` | Cleans the numbers and saves the CSVs |
 
 ---
 
@@ -63,13 +64,13 @@ Web-Data-Extractor/
 1. Clone the repository
 2. Install dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 3. Run the script:
 
-```
+```bash
 python main.py
 ```
 
@@ -91,6 +92,14 @@ Example outputs:
 
 2.
 ![Terminal output](screenshots/terminal_output.png)
+
+---
+
+## Known Limitations
+
+- It reads only the first table on the page with the `wikitable` class. If Wikipedia moves another table above it, the script stops with an error instead of saving the wrong data
+- Rows that don't have one cell per column (for example, merged cells) are skipped without a message
+- Revenue growth is kept as text (like `5.1%`), not turned into a number
 
 ---
 
